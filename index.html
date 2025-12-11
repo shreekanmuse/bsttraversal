@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tree Traversal Challenge Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>🌲 Tree Traversal Challenge Game</h1>
+    <div id="game-container">
+        <canvas id="treeCanvas" width="800" height="400"></canvas>
+
+        <div id="controls">
+            <h2 id="goal-display">Goal: Loading...</h2>
+            <p>Enter the sequence of nodes, separated by commas (e.g., A,B,C):</p>
+            
+            <form id="traversal-form">
+                <input type="text" id="user-input" placeholder="Node1,Node2,Node3..." required>
+                <button type="submit">Submit Order</button>
+            </form>
+            
+            <p id="feedback" class="message"></p>
+            <button id="next-tree-btn" style="display:none;">Generate New Tree</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
